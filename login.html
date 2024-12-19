@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登录</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html"><img src="assets/images/icon.png" alt="主页" id="home-icon" /></a>
+            <a href="register.html">注册</a>
+        </nav>
+    </header>
+    <main>
+        <h1>登录账号</h1>
+<form action="/login" method="POST" id="login-form">
+    <label for="login-username">用户名：</label>
+    <input type="text" id="login-username" name="username" required />
+    <label for="login-password">密码：</label>
+    <input type="password" id="login-password" name="password" required />
+    <button type="submit">登录</button>
+</form>
+
+<script>
+    document.getElementById('login-form').addEventListener('submit', function(e) {
+        e.preventDefault(); // 防止表单默认提交
+        // 提交表单（如果需要其他验证或者异步操作，可以在此处进行）
+        
+        // 假设登录成功，跳转到目标页面
+        window.location.href = 'https://www.baidu.com'; // 你可以根据需要修改跳转地址
+    });
+</script>
+
+    </main>
+    <footer>
+        <p>&copy; 联系我：yanfeida35@gmail.com</p>
+    </footer>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
